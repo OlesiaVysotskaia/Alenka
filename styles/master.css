@@ -1,9 +1,102 @@
 @import "reset.css";
-@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:500,800&display=swap&subset=cyrillic');
+/* @import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:500,800&display=swap&subset=cyrillic'); */
+@import "fonts.css";
 
 body {
   font-family: 'M PLUS Rounded 1c', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+nav {
+
+  background-color: #000;
+  height: 60px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__icn {
+
+}
+
+.nav__logo {
+  height: 44px;
+}
+
+.intro {
+  font-weight: 800;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 20px;
+  margin: 56px 0 8px 0;
+}
+
+.intro h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.intro img {
+  width: 275px;
+}
+
+.intro p {
+  font-size: 20px;
+  line-height: 28px;
+  color: #949494;
+  text-align: left;
+  padding: 0 16px;
+  margin: 40px 0 56px 0;
+}
+
+.intro p em {
+  color: #000;
+}
+
+@media (min-width: 768px;) {
+  nav {
+    padding: 0 24px;
+  }
+
+  .intro h1 {
+    font-size: 40px;
+    margin: 96px 0 16px 0;
+  }
+  .intro p {
+    font-size: 36px;
+    line-height: 48px;
+      padding: 0 24px;
+      margin: 72px 0 80px 0;
+  }
+
+  .intro img {
+    min-width: 661px;
+  }
+}
+.advantages ul {
+  padding: 0 16px
+}
+
+.advantages li {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 28px;
+  color: #949494;
+  padding: 16px 0 48px 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.advantages li em {
+  color: #000;
+  display: block;
 }
